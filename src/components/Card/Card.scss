@@ -1,0 +1,51 @@
+
+.card {
+  border: 1px solid #f3f3f3;
+  padding: 20px;
+  width: 220px;
+  border-radius: 20px;
+  margin: 10px;
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 15px 25px rgba(#000000, 0.07);
+    transform: translateY(-5px);
+  }
+
+  &_title {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &_img {
+    width: 120px;
+    height: 120px;
+  }
+
+  &_price-title {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+
+  &_btn-add, &_btn-fav {
+    border: none;
+    background-color: inherit;
+  }
+
+  &_btn-fav {
+    position: absolute;
+    right: 20px;
+  }
+
+  &_btn {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
